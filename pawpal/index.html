@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pawpal — a home for your little companion</title>
+<meta name="description" content="Adopt, raise and play with a virtual companion that actually looks back at you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='19' font-size='20'>🐾</text></svg>">
+</head>
+<body>
+
+<div class="bg" aria-hidden="true">
+  <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="paws" id="pawField"></div>
+</div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header id="topbar"></header>
+
+<main id="main" class="route" tabindex="-1"></main>
+
+<nav id="bottomnav" class="bottomnav" aria-label="Primary"></nav>
+
+<div id="modalRoot"></div>
+<div id="toastRoot" class="toast-root" role="status" aria-live="polite"></div>
+<div id="trailRoot" class="trail-root" aria-hidden="true"></div>
+
+<!-- data -->
+<script src="js/data/characters.js"></script>
+<script src="js/data/items.js"></script>
+<script src="js/data/achievements.js"></script>
+<!-- core -->
+<script src="js/core/util.js"></script>
+<script src="js/core/storage.js"></script>
+<script src="js/core/store.js"></script>
+<!-- services -->
+<script src="js/services/sound.js"></script>
+<script src="js/services/auth.js"></script>
+<script src="js/services/notifications.js"></script>
+<script src="js/services/pet.js"></script>
+<script src="js/services/inventory.js"></script>
+<script src="js/services/reward.js"></script>
+<!-- components -->
+<script src="js/components/pointer.js"></script>
+<script src="js/components/animal.js"></script>
+<script src="js/components/ui.js"></script>
+<script src="js/components/nav.js"></script>
+<!-- pages -->
+<script src="js/pages/landing.js"></script>
+<script src="js/pages/characters.js"></script>
+<script src="js/pages/auth.js"></script>
+<script src="js/pages/adopt.js"></script>
+<script src="js/pages/pet.js"></script>
+<script src="js/pages/play.js"></script>
+<script src="js/pages/pet-pages.js"></script>
+<script src="js/pages/user.js"></script>
+<!-- boot -->
+<script src="js/router.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
